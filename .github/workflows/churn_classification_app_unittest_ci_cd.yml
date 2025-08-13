@@ -4,11 +4,11 @@ on:
   push:
     branches: [main]
     paths:
-      - '03_Testing_CICD_Docker_Classification_APP/**'
+      - '03_Testing_CICD_Docket_Classification_APP/**'
   pull_request:
     branches: [main]
     paths:
-      - '03_Testing_CICD_Docker_Classification_APP/**'
+      - '03_Testing_CICD_Docket_Classification_APP/**'
 
 jobs:
   test:
@@ -18,7 +18,7 @@ jobs:
     defaults:
       run:
         # Set the working directory to the project root within the repository
-        working-directory: "03_Testing_CICD_Docker_Classification_APP"
+        working-directory: "03_Testing_CICD_Docket_Classification_APP"
 
     steps:
     - name: Checkout Repository
